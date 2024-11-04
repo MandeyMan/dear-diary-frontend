@@ -1,13 +1,89 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+
+.App{ 
+  display: flex;
+  align-items: center;
+ justify-content: center;width: 100%;
+ flex-direction: column;
+}
+.LoginSignup{ 
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ width: 60%;
+ margin-top: 2rem;
+}
+.Home{ 
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.DiaryList{ 
+  width: 60%;
+}
+.moveDiv{ 
+  transition: transform 0.3s ease;
+  
+}
+.moveDiv:hover{ 
+  transform: scale(1.05);
+}
+.Details{
+   width: 60%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.Create{
+   width: 70%;
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 900 */
+.title{
+  font-family: "Merienda";
+  font-family: "Merienda";
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  
+}
+.Contact{
+  width: 60%;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  color: #fff;
+  font-weight: 100;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 800px) {
+  .LoginSignup{ 
+    width: 90%;
+  }
+  .Home{ 
+    width: 90%;
+  }
+  .DiaryList{ 
+    width: 90%;
+  }
+  .Details{
+     width: 90%;
+  }
+  
+.Create{
+  width: 95%;
+}
+.Contact{
+  width: 90%;
+}
 }
